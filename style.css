@@ -1,0 +1,85 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+body{
+    height: 100vh;
+}
+
+h1{
+    margin:0;
+    text-align: center;
+    background-color: green;
+}
+
+.main-content{
+    display: grid;
+
+}
+
+.game-display{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 100px  400px;
+    column-gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-board{
+    background-color: aquamarine;
+    border-radius: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:30px;
+    border-style: none;
+    
+}
+
+#player-choice, #computer-choice{
+    height: 300px;
+    width: 300px;
+    border: solid black 2px;
+    border-radius: 15px;
+}
+.instructions{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#yes-button{
+    background-color: lightgreen;
+}
+#no-button{
+    background-color: lightcoral;
+}
+
+#yes-button, #no-button{
+    border-radius: 15px;
+    border-style: none;
+    padding: 5px 15px 5px ;
+}
+
+.select-item{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.item{
+    padding:30px;
+    background-color: plum;
+    border-style: none;
+    border-radius: 15px;
+    
+}
+footer{
+    background-color: green;
+    text-align: center;
+    margin-top: 200px;
+}

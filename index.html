@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Rocko Rocko</title>
 </head>
 
 <body>
- 
     
 <header>
     
@@ -23,35 +23,40 @@
 
         <div class="score-board">
             <p>Player Score
-                <div id="user-score">0</div>
+                <div id="playerScore">0</div>
             </p>
         </div>
 
         <div class="score-board">
             <p>Computer Score
-                <div id="computer-score">0</div>
+                <div id="computerScore">0</div>
             </p>
         </div>
 
-        <div id="player-choice">img</div>
+        <div id="playerChoice"></div>
 
-        <div id="computer-choice">img</div>
+        <div id="computerChoice"></div>
 
     </div>
 
+
     <div class="instructions">
 
-        <p> choose a button below to start, first to 5 wins.</p>
+        <p id ='results'> choose a button below to start, first to 5 wins.</p>
+
+    </div>
+
+    <div class="game-restart" id='gameRestart'>
         <p>Would you like to restart the game?
-            <button id="yes-button">Yes</button>
-            <button id="no-button">No</button>
+            <button id='yesButton'>Yes</button>
+            <button id='noButton'>No</button>
         </p>
     </div>
 
     <div class="select-item">
-        <button class="item" id="rock">Rock</button>
-        <button class="item" id="paper">Paper</button>
-        <button class="item" id="'scissors">Scissors</button>
+        <button class="item" id='rock'>Rock</button>
+        <button class="item" id='paper'>Paper</button>
+        <button class="item" id='scissors'>Scissors</button>
     </div>
 
 </div>

@@ -1,17 +1,20 @@
 body,html{
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: beige;
 }
 
 body{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
     margin:0;
     text-align: center;
-    background-color: green;
+    background-color: lightgreen;
+    padding: 15px;
 }
 
 .main-content{
@@ -39,11 +42,16 @@ h1{
     
 }
 
-#player-choice, #computer-choice{
+#playerChoice, #computerChoice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 300px;
     width: 300px;
     border: solid black 2px;
     border-radius: 15px;
+    font-weight: bold;
+    font-size: 2em;
 }
 .instructions{
     display:grid;
@@ -51,14 +59,27 @@ h1{
     align-items: center;
 }
 
-#yes-button{
+#results{
+    background-color: salmon;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    width: 600px;
+}
+
+.game-restart{
+    display: grid;
+    justify-content: center;
+}
+#yesButton{
     background-color: lightgreen;
 }
-#no-button{
+#noButton{
     background-color: lightcoral;
 }
 
-#yes-button, #no-button{
+#yesButton, #noButton{
     border-radius: 15px;
     border-style: none;
     padding: 5px 15px 5px ;
@@ -79,7 +100,8 @@ h1{
     
 }
 footer{
-    background-color: green;
+    background-color: lightgreen;
     text-align: center;
-    margin-top: 200px;
+    padding: 15px;
+    margin-top: auto;
 }
